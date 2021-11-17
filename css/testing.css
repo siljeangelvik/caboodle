@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "fontBold";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "fontLight";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "fontMedium";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Medium.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Medium.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "fontRegular";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+    line-height: 1;
+    color: rgba(59, 59, 59, 1);
+}
+
+.grid-wrapper {
+    display: grid;
+    /*grid-template-columns: 20% 40% 20% 20%;/**/
+    grid-template-columns: 100%;
+
+}
+
+nav {
+    background-color: #3b3b3b;
+    color: #e7e7e7;
+}
+
+.top-heading {
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+h1, h3 {
+    font-family: "fontBold", sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h2 {
+    font-family: "fontRegular", sans-serif;
+
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2.font-thin {
+    font-family: "fontLight", sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.2em;
+
+}
+
+h2 {
+    font-family: "fontBold", sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+p {
+    font-family: "fontRegular", sans-serif;
+}
+
+div#hero {
+    background: url("https://cdn.pixabay.com/photo/2018/08/12/16/59/parrot-3601194_1280.jpg") center center;
+    background-size: cover;
+    height: 40vw;
+}
+
+cite,
+p.hero-text {
+    font-family: "fontMedium", sans-serif;
+    font-weight: bold;
+    line-height: 1.7rem;
+    font-size: 0.8em;
+}
+
+i {
+    font-size: 2em;
+
+}
+
+.circle {
+    background-color: #eee;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1 100%;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+section.services,
+section.quote {
+    background-color: #ede06b;
+}
+
+section.services h2 {
+    padding: 0 30px;
+}
+
+section.clients {
+    background-color: #f2f2f2;
+}
+
+nav section.mobile-menu {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+
+}
+
+main > .border {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #3b3b3b;
+    color: #f2f2f2;
+    font-size: 0.6em;
+    height: 70px;
+    padding: 5px;
+}
+
+footer div a {
+    color: #f2f2f2;
+    text-decoration: none;
+    list-style: circle;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+footer div a::before {
+    content: "\f140";
+    color: #ede06b;
+    display: inline-block;
+    width: 1em;
+}
+
+.box p {
+    font-size: 0.7em;
+}
+
+
+img#hero{
+    flex: 1 100%;
+}
+
+.box-item {
+    flex: 1 33%;
+}
+
+section.services  .box {
+    padding: 0 30px 30px 30px;
+}
+
+blockquote {
+    text-align: center;
+    width: 100%;
+    background-color: #3b3b3b;
+    color: #e7e7e7;
+    font: italic 1.5em Lato sans-serif lighter;
+    font-weight: 100;
+    padding: 40px 35px;
+    margin-left: 0;
+}
+
+section.clients {
+    padding: 30px;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 20% 40% 20% 20%;
+        grid-template-rows:70% 25% 5%;
+        /*grid-template-rows: 5% 65% 20% 20%; /**/
+    }
+}
