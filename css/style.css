@@ -7,6 +7,7 @@ body {
     background-size: cover;
     height:1000px;
     margin: 0 auto;
+    background-color: #1b1b1b;
 }
 .row {
     display: flex;
@@ -15,7 +16,18 @@ body {
     flex: 1 33%;
 }
 .box-item{
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 33.33%;
+    height:15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
 }
 
 .item {
