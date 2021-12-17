@@ -1,28 +1,105 @@
+@font-face {
+    font-family: "fontRegular";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("woff2");
+}
+
 * {
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 body {
-    background-size: cover;
-    height:1000px;
+    background-color: #ec7263;
     margin: 0 auto;
-    background-color: #1b1b1b;
 }
+
+
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1 33%;
+    gap: 25px;
+    align-items: baseline;
 }
-.box-item{
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.box-item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1 33.33%;
-    height:15vh;
+    height: 15vh;
     align-items: center;
     justify-content: center;
+}
+
+.seo-item-2,
+.seo-item {
+    height: 125vh;
+}
+
+.seo-item-2 {
+    background-color: #F6C390;
+}
+
+.seo-item-2 span,
+.seo-item-2 p,
+.seo-item-2 div,
+.seo-item-2 h1,
+.seo-item-2 h2,
+.seo-item-2 h3,
+.seo-item-2 h4,
+.seo-item-2 li,
+.seo-item-2 a {
+    color: #ec7263;
+}
+
+.seo-item-2 h1,
+.seo-item-2 h2,
+.seo-item-2 h3,
+.seo-item-2 h4,
+.seo-item-2 a {
+    color: #533557;
+}
+
+
+.seo-item {
+    background-color: var(--primary);
+
+}
+
+.item-revert,
+.item-revert p a {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #F6C390;
+    color: #533557;
+    font-weight: bold;
+    font-family: fontMedium, sans-serif;
+}
+
+.item-revert a {
+    border-bottom: 3px;
+    text-decoration: 3px underline #ec7263;
+}
+
+.item-revert h4 {
+    font-family: fontMedium, sans-serif;
+    color: #ec7263;
+}
+
+.bg-0 {
+    #background: url("https://www.mgiwebzone.com/wp-content/uploads/2019/06/hiring-seo-company-870x420-870x420.jpg") no-repeat, center bottom;
+    background-size: contain;
+    z-index: -1;
 }
 
 a {
@@ -31,8 +108,13 @@ a {
 }
 
 .item {
-flex: 1 33.33%;
+    flex: 1 33.33%;
     min-width: 33.33%;
+}
+
+.seo {
+    color: #e7e7e7;
+    padding: 20px;
 }
 
 /*

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "fontBold";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "fontMedium";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Medium.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Medium.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "fontRegular";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("woff2");
+}
+
+@font-face {
+    font-family: "fontLight";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("woff2");
+}
+
+:root {
+    --primary: #533557;
+    --secondary: #F6C390;
+    --tertiary: #ec7263;
+    --orange: #FF8C1A;
+    --white: #DDD;
+    --black: #2B2B2B;
+}
+
+body {
+    background-color: var(--tertiary);
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    color: var(--tertiary);
+}
+
+div,
+li,
+p,
+span.h-contrast {
+    color: var(--secondary);
+}
+
+span.h-contrast-2 {
+    color: #ec7263;
+}
+
+h1 {
+    font-family: fontBold, sans-serif;
+    letter-spacing: .1em;
+}
+
+h2,
+h3,
+h4,
+a {
+    font-family: fontMedium, sans-serif;
+}
+
+h3,
+a,
+strong {
+    font-family: fontRegular, sans-serif;
+}
+
+h4,
+div,
+li,
+p,
+span.h-contrast {
+    font-family: fontLight, sans-serif;
+    line-height: 1.7em;
+}
