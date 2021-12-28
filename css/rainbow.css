@@ -22,6 +22,11 @@
     --purplePizzazz: #ff00cc;
 }
 
+@font-face {
+    font-family: "fontLight";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("woff2");
+}
 
 div.div-one {
     background: linear-gradient(
@@ -46,14 +51,7 @@ div.div-one {
 
 /* @formatter:off */
 footer i.fa-heart {
-    background: linear-gradient(
-            to bottom,
-            var(--purplePizzazz), var(--blizzardBlue)
-    ) no-repeat;
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  color: var(--black);
 }
 section.rainbow div:nth-child(2) {background-color: var(--radicalRed);}
 section.rainbow div:nth-child(3) {background-color: var(--wildWatermelon);}
@@ -195,7 +193,8 @@ footer > div > p {
 }
 
 footer > div > p {
-    font-size: 10px;
+    font-family: fontLight, sans-serif;
+    font-size: 11px;
 }
 
 h1 {
@@ -225,7 +224,7 @@ section.flex-container div.box {
 
 }
 
-section.flex-container div.box a i.fa-heart {
+section.flex-container div.box a i.fa-2x {
     background: linear-gradient(
             to bottom,
             #fF9E68, #FF68DE
