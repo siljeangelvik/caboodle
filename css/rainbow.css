@@ -125,7 +125,7 @@ header section {
     z-index: 2;
     background: transparent;
     padding-top: 10px;
-
+    background: var(--white);
 }
 
 header section {
@@ -146,12 +146,13 @@ header div#toggle-element {
     position: fixed;
     margin: 45px 0;
     width: 100%;
+    background: var(--white);
 }
 
 header div#toggle-element > a {
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     text-decoration: none;
     color: var(--black);
