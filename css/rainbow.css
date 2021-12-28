@@ -22,36 +22,6 @@
     --purplePizzazz: #ff00cc;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    max-width: 300px;
-    min-height: 100vh;
-    margin: 0 auto; /* Center align once max-width is reached */
-    overflow-x: hidden;
-    padding: 0 10px;
-    border: 1px solid var(--black);
-    #background: url("../assets/images/pink-bg.jpg") center no-repeat;
-    #background-size: cover;
-    background: var(--white);
-}
-
-section.rainbow {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-div {
-
-    width: 100px;
-    height: 100px;
-}
-
 
 div.div-one {
     background: linear-gradient(
@@ -75,7 +45,16 @@ div.div-one {
 
 
 /* @formatter:off */
-i.fa-heart { color: var(--blizzardBlue); }
+footer i.fa-heart {
+    background: linear-gradient(
+            to bottom,
+            var(--purplePizzazz), var(--blizzardBlue)
+    ) no-repeat;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 section.rainbow div:nth-child(2) {background-color: var(--radicalRed);}
 section.rainbow div:nth-child(3) {background-color: var(--wildWatermelon);}
 section.rainbow div:nth-child(4) {background-color: var(--outrageousOrange);}
@@ -95,9 +74,6 @@ section.rainbow div:nth-child(17) {background-color: var(--razzleDazzleRose);}
 section.rainbow div:nth-child(18) {background-color: var(--hotMagneta);}
 section.rainbow div:nth-child(19) { background-color: var(--purplePizzazz);}
 
-
-
-
 div#toggle-element { display: none; }
 header span i { padding: 0 5px 5px 0; }
 header span strong { font-size: 13px; }
@@ -105,8 +81,22 @@ header div#toggle-element > a:first-child { border-top: 2px solid var(--white); 
 header div#toggle-element > a:hover,
 header div#toggle-element > a.active { color: var(--black); }
 header div#toggle-element > a:hover { transition: .5s linear; }
-
 /* @formatter:on */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    max-width: 300px;
+    margin: 0 auto; /* Center align once max-width is reached */
+    overflow-x: hidden;
+    padding: 0 10px;
+    border: 1px solid var(--black);
+}
 
 header > a,
 footer > a,
@@ -114,9 +104,12 @@ img.logo {
     width: 80px;
 }
 
+img.logo {
+    padding-left: 10px;
+}
 
 header {
-    width: 300px;
+    min-width: 300px;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -130,7 +123,9 @@ header section {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
-    background: var(--white);
+    background: transparent;
+    padding-top: 10px;
+
 }
 
 header section {
@@ -143,15 +138,14 @@ header span {
     text-align: right;
     padding: 0 20px;
     cursor: pointer;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 header div#toggle-element {
     background: var(--primary);
     position: fixed;
-    margin: 80px 0;
+    margin: 45px 0;
     width: 100%;
-    background: var(--white);
 }
 
 header div#toggle-element > a {
@@ -165,9 +159,21 @@ header div#toggle-element > a {
     font-family: fontMedium, sans-serif;
     letter-spacing: .2em;
     line-height: 1.7em;
-    background: var(--white);
 }
 
+header div#toggle-element > a.active,
+header div#toggle-element > a:hover {
+    font-weight: bold;
+}
+
+header div#toggle-element > a.active {
+    transition: 1ms ease-out;
+}
+
+section#hero,
+footer {
+    margin-top: 100px;
+}
 
 footer section {
     display: flex;
@@ -175,56 +181,70 @@ footer section {
     align-items: center;
     justify-content: center;
 }
+
 footer section {
     width: 100%;
     text-align: left;
 }
+
 footer > div,
 footer > div > p {
     width: 100%;
     text-align: center;
 }
 
+footer > div > p {
+    font-size: 10px;
+}
 
+h1 {
+}
 
 h2 {
     padding: 20px 0;
 }
 
-
-
 section.flex-container {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
+    gap: 10px;
 }
-section.flex-container div {
+
+section.flex-container div.box {
     flex: 1 100%;
-    max-width: 100%;
-    padding: 10px;
-    #border:1px solid var(--black);
+    max-width: calc(33.33% - 7px);
+    height: 70px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+
 }
 
-
-
-
-
+section.flex-container div.box a i.fa-heart {
+    background: linear-gradient(
+            to bottom,
+            #fF9E68, #FF68DE
+    ) no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 
 @media screen and (min-width: 640px) {
-body {
-    max-width: 640px;
-}
-    section.flex-container div {
-        flex:1 50%;
-        max-width: 50%;
+    body {
+        max-width: 640px;
+    }
+
+    section.flex-container div.box {
+        max-width: calc(16.66% - 9px);
     }
 
 }
-
 
 
 @media screen and (min-width: 1280px) {
@@ -232,9 +252,12 @@ body {
         max-width: 1280px;
     }
 
-    section.flex-container div {
-        flex:1 33.33%;
-        max-width: 33.33%;
+    section.flex-container {
+        max-width: 50%;
     }
+    section.flex-container div.box {
+        max-width: calc(16.66% - 0);
+    }
+
 
 }
