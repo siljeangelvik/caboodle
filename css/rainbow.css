@@ -144,7 +144,7 @@ header span {
 header div#toggle-element {
     background: var(--primary);
     position: fixed;
-    margin: 45px 0;
+    margin: 55px 0;
     width: 100%;
     background: var(--white);
 }
