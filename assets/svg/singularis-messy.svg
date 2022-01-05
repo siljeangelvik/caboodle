@@ -1,27 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377.09 291.22">
     <defs>
         <style>
-            /* circle > */  .cls-1 {
-            fill:none;
-            stroke:#ec7263;
-            stroke-miterlimit:10;
-            stroke-width:6px; }
-
-            /* patch > */ .cls-2 {
-            fill:#533557;
-            stroke:#533557;
-            fill-opacity: 1;
-            stroke-width:11;
-            }
-
-            /* text > */ .cls-3 {
-            fill: #F6C390;
-            }
-
-            /* letter I > */ .I {
-            fill:#533557;
-            stroke:#533557;
-            }
+            /* circle >    */ .cls-1 { fill:none; stroke:#ec7263; stroke-miterlimit:10; stroke-width:6px; }
+            /* patch  >   */ .cls-2 { fill:#533557; stroke:#533557; fill-opacity: 1; stroke-width:11; }
+            /* text   >  */ .cls-3 { fill: #F6C390; }
+            /* letter > */ .I { fill:#533557; stroke:#533557; }
         </style>
     </defs>
     <g id="Layer_1">
@@ -29,17 +12,17 @@
     </g>
 
     <g id="Layer_3">
-        <rect class="cls-2" x="42" y="165" width="22" height="208"  />
-        <rect class="cls-2" x="320" y="65" width="22" height="100"/>
+        <rect class="cls-2" x="43" y="129" width="8" height="36"/>
+        <rect class="cls-2" x="327" y="129" width="8" height="36"/>
     </g>
 
     <g id="Layer_2">
         <path class="cls-3 S"
               d="M34,173.17l4.75-2.5c2.11,4.18,5.37,6.19,9.79,6.19s7.25-1.39,7.25-4.61c0-3.07-2.21-4.51-8.07-6.24-6.86-2-12.38-3.88-12.38-10.65,0-6.05,4.94-10,12.14-10,7,0,11.14,3.46,13.3,7.64l-4.37,3a9.81,9.81,0,0,0-9-5.18c-3.94,0-6.2,1.44-6.2,4,0,3.31,2.55,4.42,8.36,6.14,6.72,2,12.09,4.18,12.09,10.85,0,5.81-4.94,10.37-13.39,10.37C41.2,182.19,36.21,178.54,34,173.17Z"
-              transform="translate(-32.96 -16.39)"/>
+              transform="translate(-33.96 -16.39)"/>
         <path class="cls-3 I"
-              d="M75.16,199.52V146h6v35.52Z"
-              stroke-width="11" transform="translate(-30.96 -15.39)"/>
+              d="M78.16,181.52V146h6v35.52Z"
+              transform="translate(-33.96 -16.39)"/>
         <path class="cls-3 N"
               d="M102.26,181.52V146h6.1l16.8,25.34h.09V146h5.57v35.52h-5.47l-17.43-25.87h-.09v25.87Z"
               transform="translate(-33.96 -16.39)"/>
@@ -60,7 +43,7 @@
               transform="translate(-33.96 -16.39)"/>
         <path class="cls-3 I"
               d="M361.12,181.52V146h6.05v35.52Z"
-              transform="translate(-30.96 -15.39)"/>
+              transform="translate(-33.96 -16.39)"/>
         <path class="cls-3 S"
               d="M383.34,173.17l4.76-2.5c2.11,4.18,5.37,6.19,9.79,6.19s7.25-1.39,7.25-4.61c0-3.07-2.21-4.51-8.06-6.24-6.87-2-12.39-3.88-12.39-10.65,0-6.05,4.94-10,12.14-10,7,0,11.14,3.46,13.3,7.64l-4.37,3a9.81,9.81,0,0,0-9-5.18c-3.94,0-6.2,1.44-6.2,4,0,3.31,2.55,4.42,8.36,6.14,6.72,2,12.09,4.18,12.09,10.85,0,5.81-4.94,10.37-13.39,10.37C390.59,182.19,385.6,178.54,383.34,173.17Z"
               transform="translate(-39.96 -16.39)"/>
