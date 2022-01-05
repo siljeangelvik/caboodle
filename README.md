@@ -5,6 +5,7 @@ making a website for all the tasks, lectures, tools etc. Caboodle in collection 
 
 
 **TO DO**
+> make functional search input-field in header. 
 
 On Web Development page: <br>
 > make it possible to search for keywords in input-field <br>
