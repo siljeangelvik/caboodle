@@ -16,6 +16,8 @@ On School page: <br>
 > search only for either months or courses
 > when chosen an option, make slider with buttons < previous next > slide/"list/page"-element
 
+
+
 **RESOURCES**
 
 webkit-text-stroke: <br> (not supported by IE)
