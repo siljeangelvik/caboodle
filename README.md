@@ -25,3 +25,6 @@ https://newbedev.com/want-to-make-font-awesome-icons-thinner
 
 dropdown menu: <br>
 https://blog.hubspot.com/website/html-dropdown
+
+Icon in input-field: <br>
+https://www.geeksforgeeks.org/css-to-put-icon-inside-an-input-element-in-a-form/

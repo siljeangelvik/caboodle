@@ -10,16 +10,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- external stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/rainbow.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
     <script src="https://kit.fontawesome.com/183e136a7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-
 <header>
     <section>
         <a href="index.html">
-            <img class="logo" src="assets/images/singularis.svg" alt="logo">
+            <img class="logo" src="assets/images/singularis-black.svg" alt="logo">
         </a>
 
         <span id="toggle-button">
@@ -29,25 +29,34 @@
 
     <nav>
         <div id="toggle-element">
-            <a class="active" href="index.html">Index</a>
-            <a href="">Coming soon</a>
-            <a href="">Coming soon</a>
-            <a href="">Coming soon</a>
-            <a href="">Coming soon</a>
-            <a href="">Coming soon</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="pages/messy.html">Messy</a>
+            <a href="pages/seo.html">SEO</a>
+            <a href="pages/playground.html">Playground</a>
+            <a href="pages/page-template.html">Template</a>
         </div>
     </nav>
 </header>
-
 
 <section id="hero">
     <h1>Welcome to</h1>
     <p>My work in progress...</p>
 </section>
 
+<div class="search-bar">
+    <div class="column">
+        <label for="site-search"></label>
+        <div class="input-icons">
+            <i class="fas fa-search input-icon"></i>
+            <input type="search" id="site-search" name="site-search"
+                   aria-label="Search through site content">
+
+        </div>
+        <button>Search</button>
+    </div>
+</div>
 
 <h2>This is my Caboodle</h2>
-
 <section class="flex-container">
 
     <!-- WEB DEVELOPMENT -->
@@ -67,6 +76,16 @@
                 <a href="pages/school.html"><i class="fas fa-graduation-cap fa-2x"></i></a>
             </div>
             <p>School</p>
+        </div>
+    </div>
+
+    <!-- MY WORK -->
+    <div class="outer-box">
+        <div class="inner-box">
+            <div class="icon-box">
+                <a href="pages/work-in-progress.html"><i class="fas fa-wrench fa-2x"></i></a>
+            </div>
+            <p>My Work</p>
         </div>
     </div>
 
@@ -157,16 +176,6 @@
                 <a href="#"><i class="fas fa-ghost fa-2x"></i></a>
             </div>
             <p>Dark Humor</p>
-        </div>
-    </div>
-
-    <!-- MY WORK -->
-    <div class="outer-box">
-        <div class="inner-box">
-            <div class="icon-box">
-                <a href="pages/work-in-progress.html"><i class="fas fa-wrench fa-2x"></i></a>
-            </div>
-            <p>My Work</p>
         </div>
     </div>
 </section>

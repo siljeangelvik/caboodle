@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Caboodle</title>
+    <title>Messy</title>
     <meta name="description"
           content="">
 
@@ -11,13 +11,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- external stylesheets -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
     <script src="https://kit.fontawesome.com/183e136a7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<header class="messy">
+    <section>
+        <a href="../index.html">
+            <img class="logo" src="../assets/images/singularis-white.svg" alt="logo">
+        </a>
 
-<header class="col">
+        <span id="toggle-button">
+      <i class="fas fa-bars fa-2x"></i>
+    </span>
+    </section>
 
+    <nav>
+        <div id="toggle-element">
+            <a class="active" href="../index.html">Home</a>
+            <a href="../pages/messy.html">Messy</a>
+            <a href="../pages/seo.html">SEO</a>
+            <a href="../pages/playground.html">Playground</a>
+            <a href="../pages/page-template.html">Template</a>
+        </div>
+    </nav>
 </header>
 <!--
 <section class="col">
@@ -43,7 +62,7 @@
              alt="a majestic elephant in the forest">
 
         <div class="box-item">
-            <a class="box-item" href="pages/seo.html">SEO</a>
+            <a class="box-item" href="../pages/seo.html">SEO</a>
             <a class="box-item" href="#">DRY</a>
             <a class="box-item" href="#">KISS</a>
         </div>
@@ -101,7 +120,6 @@
              src="https://cdn.pixabay.com/photo/2021/10/09/09/18/indian-palm-squirrel-6693577_1280.jpg"
              alt="a squirrel on the ground drinking water">
 
-
         <div class="box-item">
             <a class="box-item" href="#">1</a>
             <a class="box-item" href="#">2</a>
@@ -119,10 +137,10 @@
             <a class="box-item" href="#">2</a>
             <a class="box-item" href="#">3</a>
         </div>
-
-
     </div>
 </section>
+
+<script src="../js/burger-menu.js"></script>
 
 </body>
 </html>

@@ -4,15 +4,10 @@
     src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("woff2");
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #ec7263;
     margin: 0 auto;
 }
-
 
 .row {
     display: flex;
@@ -40,15 +35,10 @@ body {
     justify-content: center;
 }
 
+/* @formatter:off */
 .seo-item-2,
-.seo-item {
-    height: 125vh;
-}
-
-.seo-item-2 {
-    background-color: #F6C390;
-}
-
+.seo-item { height: 125vh; }
+.seo-item-2 { background-color: #F6C390; }
 .seo-item-2 span,
 .seo-item-2 p,
 .seo-item-2 div,
@@ -57,23 +47,13 @@ body {
 .seo-item-2 h3,
 .seo-item-2 h4,
 .seo-item-2 li,
-.seo-item-2 a {
-    color: #ec7263;
-}
-
+.seo-item-2 a { color: #ec7263; }
 .seo-item-2 h1,
 .seo-item-2 h2,
 .seo-item-2 h3,
 .seo-item-2 h4,
-.seo-item-2 a {
-    color: #533557;
-}
-
-
-.seo-item {
-    background-color: var(--primary);
-
-}
+.seo-item-2 a { color: #533557; }
+.seo-item { background-color: var(--primary); }
 
 .item-revert,
 .item-revert p a {
@@ -86,15 +66,8 @@ body {
     font-family: fontMedium, sans-serif;
 }
 
-.item-revert a {
-    border-bottom: 3px;
-    text-decoration: 3px underline #ec7263;
-}
-
-.item-revert h4 {
-    font-family: fontMedium, sans-serif;
-    color: #ec7263;
-}
+.item-revert a { border-bottom: 3px; text-decoration: 3px underline #ec7263; }
+.item-revert h4 { font-family: fontMedium, sans-serif; color: #ec7263; }
 
 .bg-0 {
     #background: url("https://www.mgiwebzone.com/wp-content/uploads/2019/06/hiring-seo-company-870x420-870x420.jpg") no-repeat, center bottom;
@@ -102,20 +75,10 @@ body {
     z-index: -1;
 }
 
-a {
-    text-decoration: none;
-    color: #eee;
-}
-
-.item {
-    flex: 1 33.33%;
-    min-width: 33.33%;
-}
-
-.seo {
-    color: #e7e7e7;
-    padding: 20px;
-}
+a { text-decoration: none; color: #eee; }
+.item { flex: 1 33.33%; min-width: 33.33%; }
+.seo { color: #e7e7e7; padding: 20px; }
+/* @formatter:on */
 
 /*
 div.parrot {
