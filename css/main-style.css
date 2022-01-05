@@ -61,36 +61,22 @@ h2,
 section.flex-container,
 footer section { display: flex; align-items: center; justify-content: center; padding: 30px 0; flex-direction: column; row-gap: 10px; }
 
-div.search-bar,
-div.search-bar div.column,
-div.search-bar div.input-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    row-gap: 10px;
-}
-
-div.search-bar i.input-icon { text-align: left; min-width: 65%; }
-
-div.search-bar input {
-    padding: 6px;
-    border-radius: 100px;
-    max-width: 70%;
-    border: 1px solid darkgray;
-}
+div.search-bar { display: flex; justify-content: center; }
+div.search-bar div.column { display: flex; flex-wrap:wrap; justify-content: center; gap: 20px; }
+div.search-bar div.input-icons i { position: absolute; }
+div.search-bar div.input-icons { width: 100%; margin-bottom: 10px; }
+div.search-bar i.input-icon { padding: 10px; color: var(--black); min-width: 50px; text-align: center; }
+div.search-bar input.input-field { min-width:calc(320px - 5px); padding: 7px; border-radius: 100px; text-align: center; border: 1px solid darkgray; }
 
 div.search-bar button {
     padding: 10px;
     border-radius: 7px;
-    text-align: center;
-    width: 110px;
     border: none;
     background: var(--black);
     color: white;
     font-weight: bold;
     box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    width: 115px;
 }
 /* @formatter:on */
 
@@ -169,6 +155,8 @@ section.flex-container div.icon-box a i {
 @media screen and (min-width: 1280px) {
     body { max-width: 1280px; }
     section.flex-container div.outer-box { max-width: calc(16.66% - 20px); }
+    div.search-bar input.input-field { min-width:calc(420px - 15px); }
+
     /* @formatter:on */
 
 }

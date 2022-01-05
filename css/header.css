@@ -24,7 +24,7 @@
     --purplePizzazz: #ff00cc;
 
     /* MESSY */
-    --messyOrange: #ec7263;
+    --messyOrange: #EC7263;
     --messyOrangeLight: #F6C390;
     --messyPurple: #533557;
 }
@@ -42,15 +42,15 @@ header,
 header section { position: fixed; z-index: 2; }
 header section { display: flex; justify-content: space-between; align-items: center; width: 100%; top:0; padding: 10px 0; }
 header span { padding: 0 20px; cursor: pointer; }
-header div#toggle-element { position: fixed; width: 100%; padding: 15px 0 30px 0;}
+header div#toggle-element { position: fixed; width: 100%; }
+header.messy div#toggle-element { position: fixed; width: 100%; margin-top: 75px; }
 header div#toggle-element > a { display: block; padding: 30px; text-align: center; }
 
 /*** DEFAULT STYLES ***/
 /* TEXT / FONT / SPACING */
-header div#toggle-element > a { text-transform: uppercase; letter-spacing: .27em; }
-header div#toggle-element > a.active,
-header div#toggle-element > a:hover { font-weight: bold; }
-header div#toggle-element > a.active { transition: .2s linear; }
+header div#toggle-element > a { text-transform: uppercase; letter-spacing: 0.25em; font-weight: normal; font-size: 16px; margin: 5px; }
+header div#toggle-element > a.active { font-weight: bold; }
+header div#toggle-element > a:hover { letter-spacing: 0.43em; font-weight: bold; transition: .25s linear; }
 
 /* COLOR / BG-COLOR / BOX-SHADOW */
 header,
@@ -70,7 +70,7 @@ header div#toggle-element > a:hover {
 /*  COLOR / BG-COLOR / BOX-SHADOW */
 header.messy,
 header.messy section { background: transparent; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); }
-header.messy div#toggle-element { box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.2); }
+header.messy div#toggle-element { box-shadow: inset -10px -10px 20px rgba(200, 120, 160, 0.3); }
 
 header.messy section,
 header.messy div#toggle-element,
