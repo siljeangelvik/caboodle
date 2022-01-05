@@ -136,7 +136,7 @@ header section {
 .fas,
 .fab,
 .fa {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
 }
 
 header section {
@@ -238,6 +238,13 @@ h1 {
 
 h2 {
     padding: 20px 0;
+}
+section#hero { padding: 20px 0; }
+section.search-field { display: flex; width: 100%; column-gap: 50px; justify-content: center; padding: 20px 0;}
+section.search-field div {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
 }
 
 section.flex-container {
