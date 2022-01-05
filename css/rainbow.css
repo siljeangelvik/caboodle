@@ -233,50 +233,81 @@ span.dev {
     width: 18px;
 }
 
+section#hero,
+h2,
+section.flex-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+section#hero,
+h2 {
+    flex-direction: column;
+}
+
 h1 {
+    font-size: 32px;
 }
 
 h2 {
+}
+
+section.search-field {
+    display: flex;
+    width: 100%;
+    column-gap: 50px;
+    justify-content: center;
     padding: 20px 0;
 }
-section#hero { padding: 20px 0; }
-section.search-field { display: flex; width: 100%; column-gap: 50px; justify-content: center; padding: 20px 0;}
+
 section.search-field div {
     display: flex;
     flex-direction: column;
     width: 170px;
 }
 
+
 section.flex-container {
-    display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 10px;
+    row-gap:20px;
 }
 
-section.flex-container div {
+section.flex-container div.outer-box {
     display: flex;
     flex-direction: column;
     flex: 1 100%;
-    max-width: calc(33.33% - 20px);
-    height: 150px;
+    max-width: calc(33.33%);
+    height: 120px;
     border-radius: 8px;
-    align-items: center;
-    justify-content: center;
     row-gap: 10px;
 }
 
+section.flex-container div.outer-box p {
+    text-align: center;
+    width: 100%;
+}
 
-div.box {
-    max-height: 80px;
-    min-width: 80px;
+section.flex-container div.inner-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+section.flex-container div.icon-box {
+    height: 80px;
+    width: 80px;
     border-radius: 8px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section.flex-container div.box a i {
+section.flex-container div.icon-box a i {
     #background: linear-gradient(to bottom, #fF9E68, #FF68DE) no-repeat;
     #background-clip: text;
     #-webkit-background-clip: text;
@@ -290,17 +321,8 @@ section.flex-container div.box a i {
         max-width: 640px;
     }
 
-    section.flex-container {
-        row-gap: 20px;
-        column-gap: 20px;
-    }
-
-    section.flex-container div {
-        max-width: calc(33.33% - 20px);
-    }
-
-    section.flex-container div.box {
-        max-width: calc(16.66% - 9px);
+    section.flex-container div.outer-box {
+        max-width: calc(25% - 10px);
     }
 }
 
@@ -309,17 +331,8 @@ section.flex-container div.box a i {
     body {
         max-width: 1280px;
     }
-    section#hero,
-    h2 {
-        align-items: flex-start;
-    }
-    section.flex-container {
-        max-width: 50%;
-    }
 
-    section.flex-container div.box {
-        max-width: calc(16.66% - 0);
+    section.flex-container div.outer-box {
+        max-width: calc(16.66% - 20px);
     }
-
-
 }
