@@ -27,6 +27,7 @@
     src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("otf");
     src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("woff2");
 }
+
 @font-face {
     font-family: "fontBold";
     src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("otf");
@@ -94,7 +95,6 @@ header div#toggle-element > a:hover { transition: .5s linear; }
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    max-width: 300px;
     margin: 0 auto; /* Center align once max-width is reached */
     overflow-x: hidden;
     padding: 0 10px;
@@ -127,8 +127,16 @@ header section {
     position: fixed;
     z-index: 2;
     background: transparent;
-    padding-top: 10px;
+    padding: 10px 0;
     background: var(--white);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.fas,
+.fab,
+.fa {
+    -webkit-text-stroke: 1px white;
 }
 
 header section {
@@ -147,9 +155,10 @@ header span {
 header div#toggle-element {
     background: var(--primary);
     position: fixed;
-    margin: 55px 0;
+    margin: 70px 0;
     width: 100%;
     background: var(--white);
+    box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.2);
 }
 
 header div#toggle-element > a {
@@ -179,16 +188,23 @@ footer {
     margin-top: 100px;
 }
 
+section#hero,
+h2,
 footer section {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+section#hero,
+h2 {
+    flex-direction: column;
 }
 
 footer section {
     width: 100%;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 footer > div,
@@ -200,9 +216,11 @@ footer > div > p {
 footer > div > p {
     font-size: 13px;
 }
+
 span.savg {
     font-family: fontBold, sans-serif;
 }
+
 span.dev {
     font-family: fontBold, sans-serif;
     background-color: black;
@@ -210,6 +228,7 @@ span.dev {
     border-radius: 4px;
     padding: 2px;
 }
+
 .dev-icon {
     width: 18px;
 }
@@ -251,7 +270,7 @@ div.box {
 }
 
 section.flex-container div.box a i {
-    #background: linear-gradient(to bottom, #fF9E68, #FF68DE ) no-repeat;
+    #background: linear-gradient(to bottom, #fF9E68, #FF68DE) no-repeat;
     #background-clip: text;
     #-webkit-background-clip: text;
     #color: transparent;
@@ -283,10 +302,14 @@ section.flex-container div.box a i {
     body {
         max-width: 1280px;
     }
-
+    section#hero,
+    h2 {
+        align-items: flex-start;
+    }
     section.flex-container {
         max-width: 50%;
     }
+
     section.flex-container div.box {
         max-width: calc(16.66% - 0);
     }
