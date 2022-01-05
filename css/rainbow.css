@@ -27,6 +27,11 @@
     src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("otf");
     src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("woff2");
 }
+@font-face {
+    font-family: "fontBold";
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("otf");
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("woff2");
+}
 
 div.div-one {
     background: linear-gradient(
@@ -193,8 +198,20 @@ footer > div > p {
 }
 
 footer > div > p {
-    font-family: fontLight, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+}
+span.savg {
+    font-family: fontBold, sans-serif;
+}
+span.dev {
+    font-family: fontBold, sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 2px;
+}
+.dev-icon {
+    width: 18px;
 }
 
 h1 {
@@ -207,31 +224,38 @@ h2 {
 section.flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 30px;
+    row-gap: 10px;
 }
 
-section.flex-container div.box {
-    flex: 1 100%;
-    max-width: calc(33.33% - 7px);
-    height: 70px;
+section.flex-container div {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    flex: 1 100%;
+    max-width: calc(33.33% - 20px);
+    height: 150px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+
+div.box {
+    max-height: 80px;
+    min-width: 80px;
     border-radius: 8px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: center;
-
 }
 
-section.flex-container div.box a i.fa-2x {
-    background: linear-gradient(
-            to bottom,
-            #fF9E68, #FF68DE
-    ) no-repeat;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+section.flex-container div.box a i {
+    #background: linear-gradient(to bottom, #fF9E68, #FF68DE ) no-repeat;
+    #background-clip: text;
+    #-webkit-background-clip: text;
+    #color: transparent;
+    color: black;
 }
 
 
@@ -240,10 +264,18 @@ section.flex-container div.box a i.fa-2x {
         max-width: 640px;
     }
 
+    section.flex-container {
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    section.flex-container div {
+        max-width: calc(33.33% - 20px);
+    }
+
     section.flex-container div.box {
         max-width: calc(16.66% - 9px);
     }
-
 }
 
 
