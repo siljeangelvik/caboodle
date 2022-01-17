@@ -81,7 +81,11 @@ header.messy div#toggle-element > a:hover {
     color: var(--messyOrangeLight);
 }
 
+header.change-bg-color,
+header.change-bg-color > * {
+    background: transparent;
 
+}
 
 
 /* @formatter:on */
