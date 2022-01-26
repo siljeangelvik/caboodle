@@ -1,3 +1,4 @@
+/*
 let hour, greeting;
 hour = new Date().getHours(); 	// use a Date object
 
@@ -12,27 +13,33 @@ if (hour < 10) {
 }
 
 console.log("We meet again, mr. Bond!");
+*/
+
 
 // EXERCISE 1
 console.log("EXERCISE 1");
+/*
 let myNumber = 10;
 console.log(myNumber);
-
+*/
 console.log("EXERCISE 1a + 1b");
-/* writes out "Bingo, the number is 10 / true */
+// writes out "Bingo, the number is 10 / true
+/*
 if (myNumber === 10) {
     console.log("Bingo, the number is 10");
 } else {
     console.log("Aww, the number wasn't 10");
 }
-
+*/
 console.log("EXERCISE 1c");
-/* writes out "Aww, the number wasn't  10 / false */
+// writes out "Aww, the number wasn't  10 / false
+/*
 if (myNumber === 15) {
     console.log("Bingo, the number is 10");
 } else {
     console.log("Aww, the number wasn't 10");
 }
+*/
 
 // EXERCISE 2
 console.log("EXERCISE 2");
@@ -71,6 +78,7 @@ if (!apple === orange) {
 // EXERCISE 3
 console.log("EXERCISE 3");
 // writes out the else statement
+/*
 let text;
 let name = prompt("Enter your name:");
 /*
@@ -83,6 +91,7 @@ if (name != null && name.length > 3) {
 
 // EXERCISE 4
 console.log("EXERCISE 4");
+/*
 let myAge = 26;
 
 if (myAge >= 100) {
@@ -100,18 +109,21 @@ if (myAge >= 100) {
 } else if (myAge < 0) {
     console.log("That`s not possible");
 }
+
 console.log(myAge);
+*/
 
 // EXERCISE 5
 console.log("EXERCISE 5");
 // myAge = prompt("Enter your age:");
-
+/*
 if (Number(myAge)) {
     console.log("Valid number entered");
 } else {
     console.log("Not a valid number entered");
 }
 console.log(myAge);
+*/
 
 // EXERCISE 6
 console.log("EXERCISE 6");
@@ -124,12 +136,13 @@ console.log(myAge);
 
 // EXERCISE 7
 console.log("EXERCISE 7");
-
+/*
 if (name != null && name.length > 3) {
     document.body.innerHTML = ("Hello," + " " + name);
 } else {
     document.body.innerHTML = ("Awww!");
 }
+*/
 
 /////// PROGRAMMING FOUNDATIONS 1.4 /////////
 // QUESTION 1
@@ -178,3 +191,17 @@ for (i; len = myNumbers.length, spaceString = "", i < len; i++) {
 // declaring 3 variables "i", "length", and "text"
 // length is the length of the array "myNumbers"
 // i < length :  iteration is less than the arrays length ..
+
+
+let toys = [
+    { name: "Lego",  price: 15.6, },
+    { name: "Master of the Universe",  price: "28.3", },
+    { name: "Barbie",  price: null, },
+    { name: "Mr Potato Head",  price: 89.99, },
+];
+
+console.log(toys.name); // dot-notation
+console.log(toys["name"]); // bracket-notation
+
+
+
