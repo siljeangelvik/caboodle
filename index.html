@@ -4,15 +4,17 @@
     <title>Caboodle</title>
     <meta name="description"
           content="">
+    <link rel="icon" href="assets/icons/singularis-white.svg">
+
 
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- external stylesheets -->
-    <link rel="icon" href="assets/icons/singularis-white.svg">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="public/css/universal-style.css">
+    <link rel="stylesheet" href="css/main-style.css">
     <script src="https://kit.fontawesome.com/183e136a7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,11 +33,11 @@
     <nav>
         <div id="toggle-element">
             <a class="active" href="index.html">Home</a>
-            <a href="pages/messy.html">Messy</a>
-            <a href="pages/seo.html">SEO</a>
+            <a href="public/messy.html">Messy</a>
+            <a href="public/seo.html">SEO</a>
             <a href="pages/playground.html">Playground</a>
             <a href="pages/page-template.html">Template</a>
-            <a href="pages/bg-color-change.html">JS Playground</a>
+            <a href="public/bg-transition.html">JS Playground</a>
             <a href="slideshow/slider.html">Slider</a>
         </div>
     </nav>
@@ -61,8 +63,8 @@
 </div>
 
 <h2>This is my Caboodle</h2>
-<section class="flex-container">
-    <div class="column button-box">
+<section class="flex-container column center-align">
+    <div class="column button-box center-align">
         <div class="inner-box">
             <div class="icon-box">
                 <a href="pages/webdev.html"><i class="fas fa-laptop-code fa-2x"></i></a>
@@ -184,7 +186,7 @@
     </div>
 </footer>
 
-<script src="js/burger-menu.js"></script>
+<script src="public/js/burger-menu.js"></script>
 <script src="js/snippets.js"></script>
 </body>
 </html>

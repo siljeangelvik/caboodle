@@ -4,24 +4,21 @@
     <title>Caboodle</title>
     <meta name="description"
           content="">
-
+    <link rel="icon" href="../assets/icons/singularis-white.svg">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- external stylesheets -->
-    <link rel="icon" href="../assets/icons/singularis-white.svg">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="../css/font-face.css">
-    <link rel="stylesheet" type="text/css" href="../css/main-style.css">
+    <link rel="stylesheet" href="css/universal-style.css">
+    <link rel="stylesheet" href="css/specific-style.css">
 
     <script src="https://kit.fontawesome.com/183e136a7d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="seo">
 
 
-<header class="messy">
+<header class="seo">
     <section>
         <a href="../index.html">
             <img class="logo" src="../assets/svg/singularis-messy.svg" alt="logo">
@@ -35,28 +32,34 @@
     <nav>
         <div id="toggle-element">
             <a href="../index.html">Home</a>
-            <a href="../pages/messy.html">Messy</a>
-            <a class="active" href="../pages/seo.html">SEO</a>
+            <a href="messy.html">Messy</a>
+            <a class="active" href="seo.html">SEO</a>
             <a href="../pages/playground.html">Playground</a>
             <a href="../pages/page-template.html">Template</a>
-            <a href="../pages/bg-color-change.html">JS Playground</a>
+            <a href="bg-transition.html">JS Playground</a>
 
         </div>
     </nav>
 </header>
 <!--
 <section class="col">
-    <div class="box-item item">1</div>
-    <div class="box-item item">2</div>
-    <div class="box-item item">3</div>
+    <div class="seo-item seo-box">1</div>
+    <div class="seo-item seo-box">2</div>
+    <div class="seo-item seo-box">3</div>
 </section>
 -->
 
+<div id="greeting"></div>
+
+<section id="hero">
+    <h1></h1>
+    <p></p>
+</section>
 
 <section class="seo">
     <div class="seo-container row">
 
-        <div class="seo-item box-item col">
+        <div class="seo-item seo-box col">
             <h1>SEO basics: <span class="h-contrast">22 essentials you need for optimizing your site</span></h1>
 
             <h2>What is SEO?</h2>
@@ -102,10 +105,10 @@
             <h3>2) The quality of your content</h3>
             <p></p>
 
-            <div class=" seo-item item-revert">
+            <div class="seo-item seo-revert">
                 <h4>Keep reading from source: </h4>
                 <p>
-                    <a href="https://www.searchenginewatch.com/2016/01/21/seo-basics-22-essentials-you-need-for-optimizing-your-site/">
+                    <a class="seo-link" href="https://www.searchenginewatch.com/2016/01/21/seo-basics-22-essentials-you-need-for-optimizing-your-site/">
                         Search Engine Watch
                     </a>
                 </p>
@@ -113,7 +116,7 @@
         </div>
 
 
-        <div class=" seo-item-2 col">
+        <div class="seo-item-2 col">
             <h1>SEO basics: <span class="h-contrast-2">Lorem ipsum dolor sit.</span></h1>
             <h2>Lorem ipsum dolor.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, reiciendis.</p>
@@ -131,7 +134,7 @@
     </div>
 </section>
 
-<script src="../js/burger-menu.js"></script>
+<script src="js/burger-menu.js"></script>
 
 </body>
 </html>

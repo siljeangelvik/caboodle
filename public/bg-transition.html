@@ -10,15 +10,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- external stylesheets -->
-    <link rel="icon" href="../assets/icons/singularis-white.ico">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/main-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/bg-color-change.css">
+    <link rel="icon" href="../assets/icons/singularis-white.svg">
+    <link rel="stylesheet" type="text/css" href="css/universal-style.css">
+    <link rel="stylesheet" type="text/css" href="css/specific-style.css">
     <script src="https://kit.fontawesome.com/183e136a7d.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="box">
-<header class="change-bg-color">
+<body id="color-transition" class="btnChangeBgColor">
+<header class="color-transition">
     <section>
         <a href="../index.html">
             <img class="logo" src="../assets/svg/singularis-bg-change.svg" alt="logo">
@@ -32,19 +31,32 @@
     <nav>
         <div id="toggle-element">
             <a class="active" href="../index.html">Home</a>
-            <a href="../pages/messy.html">Messy</a>
-            <a href="../pages/seo.html">SEO</a>
+            <a href="messy.html">Messy</a>
+            <a href="seo.html">SEO</a>
             <a href="../pages/playground.html">Playground</a>
             <a href="../pages/page-template.html">Template</a>
-            <a href="../pages/bg-color-change.html">JS Playground</a>
+            <a href="bg-transition.html">JS Playground</a>
         </div>
     </nav>
 </header>
 
-<h1 id="h1">Hello, World</h1>
-<h2 id="h2">Testing some things</h2>
+<h1 id="h1" class="changeTxtColor">Hello, World</h1>
+<h2 id="h2" class="changeTxtColor">Click me</h2>
 
+<footer id="footer">
+    <a href="../index.html"></a>
+    <section class="flex-container">
+        <div>
+        </div>
+        <div>
+        </div>
+    </section>
+    <div>
+        <p>© 2021 Made by <span class="savg">SAVG</span><span class="dev">DEV</span>. All rights reserved.</p>
+    </div>
+</footer>
 
-<script src="../js/bg-color-change.js"></script>
+<script src="js/burger-menu.js"></script>
+<script src="js/bg-transition.js"></script>
 </body>
 </html>

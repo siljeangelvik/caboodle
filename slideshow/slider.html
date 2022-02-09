@@ -2,63 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Hero Slider</title>
-    <link rel="stylesheet" href="slider.css"/>
+    <title>Slider</title>
     <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet"/>
     <link rel="icon" href="../assets/icons/singularis-white.svg">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/universal-style.css">
+    <link rel="stylesheet" href="../public/css/specific-style.css">
+    <script src="https://kit.fontawesome.com/183e136a7d.js" crossorigin="anonymous"></script>
 
+</head>
+<body id="slider">
+
+<section id="hero"></section>
 <div id="slider-loop">
     <div class="slide-pic active">
-        <img src="images/slide-colour.jpg" alt="pastel colours"/>
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/14/00/plants-1834749_1280.jpg" alt="" />
         <div class="slide-overlay-text">
-            <span class="slide-header">Silje Angelvik</span>
-            <span class="slide-text">Some text</span>
+            <span class="slide-header font-lemon-light">Simple slider</span>
+            <span class="slide-text">Some JavaScript</span>
         </div>
     </div>
-
-    <div class="slide-pic">
-        <img src="images/slide-flamingo.jpg" alt="flamingo"/>
-    </div>
-
-    <div class="slide-pic"><img src="images/slide-flower.jpg" alt="pink flower"/></div>
-    <div class="slide-pic"><img src="images/slide-houses.jpg" alt="brick buildings"/></div>
-    <div class="slide-pic"><img src="images/slide-ladder.jpg" alt="stairs"/></div>
-
+    <div class="slide-pic"><img src="https://cdn.pixabay.com/photo/2022/01/15/15/40/old-man-6939927_1280.jpg" alt="" /></div>
+    <div class="slide-pic"><img src="https://cdn.pixabay.com/photo/2021/04/26/20/53/nature-6209977_1280.jpg" alt="" /></div>
+    <div class="slide-pic"><img src="https://cdn.pixabay.com/photo/2022/01/19/00/36/sea-6948569_1280.jpg" alt="" /></div>
+    <div class="slide-pic"><img src="https://cdn.pixabay.com/photo/2022/01/21/07/21/ring-tailed-lemur-6954076_1280.jpg" alt="" /></div>
     <div class="slider-buttons">
         <div class="slider-back-btn">
-            <span>◀</span>
+            <i class="fas fa-chevron-left slider-back-icon"></i>
         </div>
-
         <div class="slider-next-btn">
-            <span>▶</span>
+            <i class="fas fa-chevron-right slider-next-icon"></i>
         </div>
     </div>
 </div>
 
-<section class="flex-container screen-width">
-    <div class="chivo">
-        <h3>HAPPY @ WORK</h3>
-        <h5>Companies with happy employees outperform the competition by 20%</h5>
-        <p>Make the working space more fun and encourage your employees to let their inner child out!</p>
-        <h5>67% of full-time employees with access to free food at work are "extremely" or "very" happy at their current
-            job</h5>
-        <p>Free snacks or lunch at work are a good opportunity to show your employees that you care about their
-            wellbeing</p>
-        <h5>Close work friendships boost employee satisfaction by 50%</h5>
-        <p>Next time you see your employees giggling around the water cooler, don't scold them but let them build
-            friendships at work.</p>
-        <h5>A "Wall of Fame" can boost up your employee engagement</h5>
-        <p>Having a "Wall of Fame" in your office can be a fun idea. Don't only focus on standard accomplishments but
-            also include fun ones, such as "the most coffee drunk in one day" or "the grumpiest person on Monday".</p>
-        <h5>Theme days increase fun at work</h5>
-        <p>Organizing theme days can bring a lot of joy at work, for example: Hawaiian T-Shirt Thursday or Favourite
-            Superhero Friday.</p>
-    </div>
-</section>
-
-
-<script src="slider.js"></script>
+<script src="../public/js/slider.js"></script>
 </body>
 </html>
