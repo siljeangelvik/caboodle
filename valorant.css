@@ -1,0 +1,112 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 120px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+    width: 450px;
+    font-family: 'VALORANT', sans-serif;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #222;
+    #background: url("wp6987344-valorant-minimal-wallpapers.png") no-repeat center;
+    #background-size: cover;
+    justify-content: center;
+}
+
+ul, li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 55%;
+    border: 0;
+    top: 140px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+}
+
+label, input {
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+input {
+    text-align: center;
+    background-color: #eee;
+}
+
+div.agent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: 20px;
+}
+
+div.agent p:first-of-type {
+    max-width: 270px;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-box,
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.agent-menu {
+    position: absolute;
+    bottom:5px;
+    left:10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    row-gap:40px;
+    font-size: 18px;
+    height: 100%;
+}
+
+.agentIcon {
+    text-align: center;
+    width: 100%;
+}
+
+.agent-intro {
+    margin-top: 150px;
+}
+
+.agent-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: 20px;
+    font-size: 14px;
+    max-width: 100%;
+    padding: 0 10px 0 130px;
+}
